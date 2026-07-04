@@ -30,10 +30,6 @@ def currency_converter(df):
     rate_from=rates[from_currency]
     final_amount=amount/rate_from
     rates_to=rates[to_currency]
-    print(f"Rate:{rates}")
-    print(f"Rate_from: {rate_from}")
-    print(f"Rateo-to={rates_to}")
-    print(f"Amount: {final_amount}")
     final_amount1=final_amount * rates_to
     print(f"\n The exchange rate of amount {amount} {from_currency} to {to_currency} = {final_amount1:.2f} {to_currency}")
     next_currency=pd.DataFrame([{
