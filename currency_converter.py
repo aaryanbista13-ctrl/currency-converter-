@@ -36,7 +36,7 @@ def currency_converter(df):
         "Amount":amount,
         "From_currency":from_currency,
         "To_currency":to_currency,
-        "Final_amount":final_amount1.round(2)
+        "Final_amount":round(final_amount1,2)
     }])
     df=pd.concat([df,next_currency],ignore_index=True)
     save_currency(df)
